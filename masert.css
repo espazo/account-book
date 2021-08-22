@@ -1,0 +1,46 @@
+table,
+#control,
+#total {
+    margin: auto;
+    width: 800px;
+}
+
+table {
+    clear: both;
+}
+
+table tr {
+    border-bottom: 1px lightgray solid;
+    display: block;
+}
+
+table tr td,
+th {
+    width: 200px;
+    text-align: center;
+}
+
+#modal {
+    position: fixed;
+    top: 0;
+    left: 0;
+
+    background-color: rgba(0, 0, 0, 0.7);
+
+    width: 100%;
+    height: 100%;
+
+    display: none;
+}
+
+#modal #dialog {
+    width: 20%;
+    height: 20%;
+    background-color: white;
+
+    border-radius: 10%;
+    border: solid 1px black;
+
+    margin: 10% auto 0;
+    padding: 10%;
+}

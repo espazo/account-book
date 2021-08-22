@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>hiring</title>
+    <link rel="stylesheet" href="masert.css">
+</head>
+
+<body>
+
+    <form id="control">
+        <span>
+            年份：
+            <select id="sel-year">
+                <option value="all">全部</option>
+            </select>
+        </span>
+        <span>
+            月份：
+            <select id="sel-month">
+                <option value="all">全部</option>
+            </select>
+        </span>
+        <span>
+            类型：
+            <select id="sel-category">
+                <option value="all">全部</option>
+            </select>
+        </span>
+        <span style="float: right;">
+            <input id="add" type="button" value="添加记录">
+        </span>
+    </form>
+
+    <div id="total">
+        <div>收入项目总和为：<span id="income">0</span></div>
+        <div>支出项目总和为：<span id="expenditure">0</span></div>
+    </div>
+
+    <table>
+        <tr>
+            <th>类型</th>
+            <th>时间</th>
+            <th>分类</th>
+            <th>金额</th>
+        </tr>
+        <tbody id="content">
+        </tbody>
+    </table>
+
+    <div id="modal">
+        <div id="dialog">
+            <form>
+                <div class='type'>
+                    - 支出 -
+                </div>
+                <div>
+                    日期：
+                    <input class="time" type="date" value="2021-07-24">
+                </div>
+                <div>
+                    分类：
+                    <select class="category">
+                    </select>
+                </div>
+                <div>
+                    金额：
+                    <input class="amount" type="number" value="100">
+                </div>
+                <div>
+                    <input id="save" type="button" value="保存">
+                    <input id="cancel" type="button" value="取消">
+                </div>
+            </form>
+        </div>
+    </div>
+</body>
+<script src="master.js"></script>
+
+</html>
