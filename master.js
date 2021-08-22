@@ -11,7 +11,7 @@ const es = function (selectors) {
 const database = async function () {
 
     const _async = new Promise(function (resolve, reject) {
-        resolve('return');
+        resolve('_async');
     });
 
     const table = {
@@ -342,8 +342,7 @@ const database = async function () {
 }
 
 const env = {
-    'database': null,
-    'init_sel_year': null,
+    'database': {},
 };
 
 const show = function () {
